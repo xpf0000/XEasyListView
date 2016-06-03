@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
+        <!--Table TestVC1-->
+        <scene sceneID="oHl-hB-DZA">
+            <objects>
+                <viewController storyboardIdentifier="TableTestVC1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="skw-M0-WWg" customClass="TableTestVC1" customModule="XEasyListView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3FV-UA-wTi"/>
+                        <viewControllerLayoutGuide type="bottom" id="ueJ-qd-JeN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lqL-0e-ebU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T68-PH-YiG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="331" y="-542"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="XEasyListView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +34,105 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHy-LI-nl8">
+                                <rect key="frame" x="253" y="150" width="94" height="30"/>
+                                <state key="normal" title="TableTestVC2"/>
+                                <connections>
+                                    <segue destination="p6K-8J-UMz" kind="show" id="5Ox-hf-W2A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wyf-2I-zxq">
+                                <rect key="frame" x="238" y="220" width="124" height="30"/>
+                                <state key="normal" title="CollectionTestVC1"/>
+                                <connections>
+                                    <segue destination="hfb-4m-Qsu" kind="show" id="Be6-bO-KM2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="atb-qn-xcX">
+                                <rect key="frame" x="237" y="290" width="126" height="30"/>
+                                <state key="normal" title="CollectionTestVC2"/>
+                                <connections>
+                                    <segue destination="eWZ-tV-jR9" kind="show" id="FKt-Lj-bNz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kl9-bM-3hs">
+                                <rect key="frame" x="254" y="80" width="92" height="30"/>
+                                <state key="normal" title="TableTestVC1"/>
+                                <connections>
+                                    <segue destination="skw-M0-WWg" kind="show" id="cn0-dk-XZO"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wyf-2I-zxq" firstAttribute="top" secondItem="YHy-LI-nl8" secondAttribute="bottom" constant="40" id="3Il-RI-ep9"/>
+                            <constraint firstItem="Kl9-bM-3hs" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="6eL-ii-NW4"/>
+                            <constraint firstItem="Wyf-2I-zxq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H9A-gG-Pfv"/>
+                            <constraint firstItem="Kl9-bM-3hs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PoV-Od-8dG"/>
+                            <constraint firstItem="YHy-LI-nl8" firstAttribute="top" secondItem="Kl9-bM-3hs" secondAttribute="bottom" constant="40" id="ViI-Qw-yaH"/>
+                            <constraint firstItem="atb-qn-xcX" firstAttribute="top" secondItem="Wyf-2I-zxq" secondAttribute="bottom" constant="40" id="ZM7-1f-QI2"/>
+                            <constraint firstItem="YHy-LI-nl8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iH9-u7-pYm"/>
+                            <constraint firstItem="atb-qn-xcX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lkC-Wd-zXO"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Test TableVC2-->
+        <scene sceneID="YYL-kq-fif">
+            <objects>
+                <viewController storyboardIdentifier="TestTableVC2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p6K-8J-UMz" customClass="TestTableVC2" customModule="XEasyListView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5gI-mA-BPH"/>
+                        <viewControllerLayoutGuide type="bottom" id="IgH-Jr-L9o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Sbk-nU-WNh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CJd-5a-1NQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211" y="-78"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2mm-VB-HfU">
+            <objects>
+                <viewController id="eWZ-tV-jR9" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="M2U-Y9-WJW"/>
+                        <viewControllerLayoutGuide type="bottom" id="F85-fq-Fve"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zqn-Kb-r0K">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKU-N8-Acb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="340" y="1184"/>
+        </scene>
+        <!--Test CollectionVC1-->
+        <scene sceneID="Ptd-YL-QWl">
+            <objects>
+                <viewController storyboardIdentifier="TestCollectionVC1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hfb-4m-Qsu" customClass="TestCollectionVC1" customModule="XEasyListView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xex-Mh-Cyq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Aqu-4l-Nbj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2WS-0g-RpZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eK4-kx-f4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211" y="802"/>
         </scene>
     </scenes>
 </document>

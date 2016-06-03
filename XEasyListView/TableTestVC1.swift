@@ -23,7 +23,7 @@ class TableTestVC1: UIViewController {
         
         table.setHandle(url, pageStr: "[page]", keys: ["detail"], model: TestModel.self, CellIdentifier: "TestTableCell")
         
-        table.cellHeight = 60
+        //table.cellHeight = 60
         
         table.show()
         

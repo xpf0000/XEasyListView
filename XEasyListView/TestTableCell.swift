@@ -10,11 +10,14 @@ import UIKit
 
 class TestTableCell: UITableViewCell {
 
+    @IBOutlet var ctext: UILabel!
+    
     var model:TestModel!
     {
         didSet
         {
-            self.textLabel?.text = model.content
+            ctext.preferredMaxLayoutWidth = sw-20
+            ctext.text = model.content
         }
     }
     

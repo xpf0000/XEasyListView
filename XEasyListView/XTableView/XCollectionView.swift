@@ -29,21 +29,14 @@ class XCollectionView: UICollectionView,UICollectionViewDelegate,UICollectionVie
     
     func Delegate(d:UICollectionViewDelegate)
     {
-        if "\(d)" != "\(self)"
-        {
-            delegates.append(d)
-        }
-        
+        delegates.append(d)
     }
     
     var dataSources:[UICollectionViewDataSource] = []
     
     func DataSource(d:UICollectionViewDataSource)
     {
-        if "\(d)" != "\(self)"
-        {
-            dataSources.append(d)
-        }
+        dataSources.append(d)
     }
     
     func initSelf()

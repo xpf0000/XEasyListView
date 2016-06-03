@@ -23,19 +23,12 @@ class XTableView: UITableView ,UITableViewDataSource,UITableViewDelegate{
     
     func Delegate(d:UITableViewDelegate)
     {
-        if "\(d)" != "\(self)"
-        {
-            delegates.append(d)
-        }
-
+        delegates.append(d)
     }
     
     func DataSource(d:UITableViewDataSource)
     {
-        if "\(d)" != "\(self)"
-        {
-            dataSources.append(d)
-        }
+        dataSources.append(d)
     }
     
     var dataSources:[UITableViewDataSource] = []
